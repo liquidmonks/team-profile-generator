@@ -7,7 +7,13 @@ const questions = [
     type: "input",
     name: "manager",
     message: "Are you a new Manager?",
-    choices: ["Yes", "No"],
+    choices: ["y", "n"],
+  },
+  {
+    type: "input",
+    name: "managerName",
+    message: "What is your name?",
+    when: (answers) => answers.manager === "y", // <--- this is the important part
   },
 ];
 
