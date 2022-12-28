@@ -1,5 +1,7 @@
 // This file is used to generate the HTML file that will be used to display the data
 
+// Import the classes
+const { Engineer, Intern, Manager } = require("./lib/classes");
 const generateHTML = (data) => {
   //console.log(data);
 
