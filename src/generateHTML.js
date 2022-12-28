@@ -4,7 +4,7 @@
 const { Engineer, Intern, Manager } = require("./lib/classes");
 const path = require("path");
 
-const htmlPath = path.join(__dirname);
+const htmlPath = path.join(__dirname, "./dist/public.html");
 console.log(htmlPath);
 
 const generateHTML = (data) => {
@@ -17,7 +17,12 @@ const generateHTML = (data) => {
     switch (data.role) {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
-        console.log(newEngineer);
+        //console.log(newEngineer);
+        const markup = `
+        ${newManager.name}
+        ${newEngineer.name}
+
+        `;
         break;
       case "Intern":
         const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
