@@ -24,8 +24,17 @@ const generateHTML = (data) => {
         let markupEngineer = `
         ${newManager.name}
         ${newEngineer.name}
-
         `;
+
+        // Write the HTML markup to the public.html file
+        fs.writeFile(htmlPath, markupEngineer, (err) => {
+          if (!err) {
+            console.log("Data posted to HTML file");
+          } else {
+            console.log(err);
+          }
+        });
+
         break;
       case "Intern":
         const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
@@ -34,8 +43,8 @@ const generateHTML = (data) => {
         let markupIntern = `
          ${newManager.name}
          ${newIntern.name}
- 
          `;
+
         break;
       default:
         break;
