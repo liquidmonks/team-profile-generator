@@ -79,8 +79,14 @@ const questions = [
   },
   {
     type: "input",
-    name: "internName",
+    name: "internID",
     message: "What is your Intern's ID?",
+    when: (answers) => answers.role === "Intern", // <--- this is the important part
+  },
+  {
+    type: "input",
+    name: "internEmail",
+    message: "What is your Intern's email address?",
     when: (answers) => answers.role === "Intern", // <--- this is the important part
   },
 ];
