@@ -9,7 +9,7 @@ const generateHTML = (data) => {
   if (data.manager == "y") {
     switch (data.role) {
       case "Engineer":
-        const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.github);
+        const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
         break;
       case "Intern":
         break;
