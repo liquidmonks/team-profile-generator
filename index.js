@@ -21,6 +21,12 @@ const questions = [
     message: "Please Enter Employee ID.",
     when: (answers) => answers.manager === "y", // <--- this is the important part
   },
+  {
+    type: "input",
+    name: "managerEmail",
+    message: "Please Enter Email Address.",
+    when: (answers) => answers.manager === "y", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
