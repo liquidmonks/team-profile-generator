@@ -7,6 +7,8 @@ const generateHTML = (data) => {
 
   // If the user is a manager, then the manager HTML will be generated
   if (data.manager == "y") {
+    const newManager = new Manager(data.managerName, data.managerID, data.managerEmail, data.officeNumber);
+
     switch (data.role) {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
