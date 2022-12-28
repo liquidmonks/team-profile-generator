@@ -61,6 +61,13 @@ const questions = [
     message: "What is your Engineer email address?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
   },
+
+  {
+    type: "input",
+    name: "engineerGithub",
+    message: "What is your Engineer Github handle?",
+    when: (answers) => answers.role === "Engineer", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
