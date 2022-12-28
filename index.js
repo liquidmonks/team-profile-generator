@@ -70,10 +70,17 @@ const questions = [
   },
 
   // Intern questions
+
   {
     type: "input",
     name: "internName",
     message: "What is your Intern's name?",
+    when: (answers) => answers.role === "Intern", // <--- this is the important part
+  },
+  {
+    type: "input",
+    name: "internName",
+    message: "What is your Intern's ID?",
     when: (answers) => answers.role === "Intern", // <--- this is the important part
   },
 ];
