@@ -27,6 +27,12 @@ const questions = [
     message: "Please Enter Email Address.",
     when: (answers) => answers.manager === "y", // <--- this is the important part
   },
+  {
+    type: "input",
+    name: "officeNumber",
+    message: "Please Enter Your Office Number",
+    when: (answers) => answers.manager === "y", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
