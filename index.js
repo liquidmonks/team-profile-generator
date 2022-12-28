@@ -34,7 +34,7 @@ const questions = [
     when: (answers) => answers.manager === "y", // <--- this is the important part
   },
 
-  // Choices for the user to select team members
+  // Choices of role for the user to select for a team member
   {
     type: "list",
     name: "role",
@@ -46,27 +46,35 @@ const questions = [
   {
     type: "input",
     name: "engineerName",
-    message: "What is your Engineer name?",
+    message: "What is your Engineer's name?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
   },
   {
     type: "input",
     name: "engineerID",
-    message: "What is your Engineer ID?",
+    message: "What is your Engineer's ID?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
   },
   {
     type: "input",
     name: "engineerEmail",
-    message: "What is your Engineer email address?",
+    message: "What is your Engineer's email address?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
   },
 
   {
     type: "input",
     name: "engineerGithub",
-    message: "What is your Engineer Github handle?",
+    message: "What is your Engineer's Github handle?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
+  },
+
+  // Intern questions
+  {
+    type: "input",
+    name: "internName",
+    message: "What is your Intern's name?",
+    when: (answers) => answers.role === "Intern", // <--- this is the important part
   },
 ];
 
