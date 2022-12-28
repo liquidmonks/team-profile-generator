@@ -89,6 +89,12 @@ const questions = [
     message: "What is your Intern's email address?",
     when: (answers) => answers.role === "Intern", // <--- this is the important part
   },
+  {
+    type: "input",
+    name: "internSchool",
+    message: "What is your Intern's school name?",
+    when: (answers) => answers.role === "Intern", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
