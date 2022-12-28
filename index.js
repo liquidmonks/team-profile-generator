@@ -1,7 +1,7 @@
 // Global variables
 const inquirer = require("inquirer");
 
-// Function to initialize app
+// Manager questions
 const questions = [
   {
     type: "input",
@@ -32,6 +32,14 @@ const questions = [
     name: "officeNumber",
     message: "Please Enter Your Office Number",
     when: (answers) => answers.manager === "y", // <--- this is the important part
+  },
+
+  // Choices for the user to select team members
+  {
+    type: "list",
+    name: "role",
+    message: "Select a role:",
+    choices: ["Engineer", "Intern"],
   },
 ];
 
