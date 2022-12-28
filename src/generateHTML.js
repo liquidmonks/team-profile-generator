@@ -18,7 +18,9 @@ const generateHTML = (data) => {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
         //console.log(newEngineer);
-        let markup = `
+
+        // Create the HTML markup
+        let markupEngineer = `
         ${newManager.name}
         ${newEngineer.name}
 
@@ -26,7 +28,13 @@ const generateHTML = (data) => {
         break;
       case "Intern":
         const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
-        console.log(newIntern);
+        //console.log(newIntern);
+        // Create the HTML markup
+        let markupIntern = `
+         ${newManager.name}
+         ${newIntern.name}
+ 
+         `;
         break;
       default:
         break;
