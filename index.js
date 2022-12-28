@@ -15,6 +15,12 @@ const questions = [
     message: "What is your name?",
     when: (answers) => answers.manager === "y", // <--- this is the important part
   },
+  {
+    type: "input",
+    name: "managerID",
+    message: "Please Enter Employee ID.",
+    when: (answers) => answers.manager === "y", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
