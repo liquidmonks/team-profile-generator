@@ -18,7 +18,7 @@ const generateHTML = (data) => {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
         //console.log(newEngineer);
-        const markup = `
+        let markup = `
         ${newManager.name}
         ${newEngineer.name}
 
