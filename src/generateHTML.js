@@ -5,6 +5,14 @@ const generateHTML = (data) => {
 
   // If the user is a manager, then the manager HTML will be generated
   if (data.manager == "y") {
+    switch (data.role) {
+      case "Engineer":
+        break;
+      case "Intern":
+        break;
+      default:
+        break;
+    }
   }
   // If the user is not a manager, then do nothing
   else {
