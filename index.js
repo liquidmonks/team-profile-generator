@@ -99,5 +99,5 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then((answers) => {
-  console.log(answers);
+  generateHTML(answers); // Populates the HTML file with the user's answers
 });
