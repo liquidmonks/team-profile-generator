@@ -1,5 +1,6 @@
 // Global variables
 const inquirer = require("inquirer");
+const { generateHTML } = require("./src/generateHTML"); // <--- this array links to the generateHTML.js file
 
 // Manager questions
 const questions = [
