@@ -49,6 +49,12 @@ const questions = [
     message: "What is your Engineer name?",
     when: (answers) => answers.role === "Engineer", // <--- this is the important part
   },
+  {
+    type: "input",
+    name: "engineerID",
+    message: "What is your Engineer ID?",
+    when: (answers) => answers.role === "Engineer", // <--- this is the important part
+  },
 ];
 
 inquirer.prompt(questions).then((answers) => {
