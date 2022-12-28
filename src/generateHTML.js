@@ -2,6 +2,11 @@
 
 // Import the classes
 const { Engineer, Intern, Manager } = require("./lib/classes");
+const path = require("path");
+
+const htmlPath = path.join(__dirname);
+console.log(htmlPath);
+
 const generateHTML = (data) => {
   //console.log(data);
 
