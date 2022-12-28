@@ -10,8 +10,11 @@ const generateHTML = (data) => {
     switch (data.role) {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
+        console.log(newEngineer);
         break;
       case "Intern":
+        const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
+        console.log(newIntern);
         break;
       default:
         break;
