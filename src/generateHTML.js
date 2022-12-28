@@ -3,6 +3,7 @@
 // Import the classes
 const { Engineer, Intern, Manager } = require("./lib/classes");
 const path = require("path");
+const fs = require("fs");
 
 const htmlPath = path.join(__dirname, "./dist/public.html");
 console.log(htmlPath);
