@@ -46,13 +46,13 @@ const generateHTML = (data) => {
                     ${newEngineer.getRole()}
                 </h2>
                 <p class="w-full p-4 bg-white">Email:${newEngineer.email}</p>
-                <p class="w-full p-4 bg-white">GitHub:<a href="https://github.com/${newEngineer.gitHub()}">${newEngineer.getGithub()}</a></p>
+                <p class="w-full p-4 bg-white">GitHub:<a href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
             </div>
         </div>
         `;
 
         // Write the HTML markup to the public.html file
-        fs.writeFile(htmlPath, markupEngineer, (err) => {
+        fs.appendFile(htmlPath, markupEngineer, (err) => {
           if (!err) {
             console.log("Data posted to HTML file");
           } else {
@@ -96,7 +96,7 @@ const generateHTML = (data) => {
          `;
 
         // Write the HTML markup to the public.html file
-        fs.writeFile(htmlPath, markupIntern, (err) => {
+        fs.appendFile(htmlPath, markupIntern, (err) => {
           if (!err) {
             console.log("Data posted to HTML file");
           } else {
@@ -122,7 +122,7 @@ const generateHTML = (data) => {
         `;
 
         // Write the HTML markup to the public.html file
-        fs.writeFile(htmlPath, markupEngineer, (err) => {
+        fs.appendFile(htmlPath, markupEngineer, (err) => {
           if (!err) {
             console.log("Data posted to HTML file");
           } else {
@@ -140,7 +140,7 @@ const generateHTML = (data) => {
          `;
 
         // Write the HTML markup to the public.html file
-        fs.writeFile(htmlPath, markupIntern, (err) => {
+        fs.appendFile(htmlPath, markupIntern, (err) => {
           if (!err) {
             console.log("Data posted to HTML file");
           } else {
