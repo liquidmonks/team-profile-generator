@@ -46,7 +46,7 @@ const generateHTML = (data) => {
                     ${newEngineer.getRole()}
                 </h2>
                 <p class="w-full p-4 bg-white">Email:${newEngineer.email}</p>
-                <p class="w-full p-4 bg-white">GitHub:< href="https://github.com/${newEngineer.gitHub()}">${newEngineer.getGithub()}</a></p>
+                <p class="w-full p-4 bg-white">GitHub:<a href="https://github.com/${newEngineer.gitHub()}">${newEngineer.getGithub()}</a></p>
             </div>
         </div>
         `;
@@ -66,8 +66,33 @@ const generateHTML = (data) => {
         //console.log(newIntern);
         // Create the HTML markup
         let markupIntern = `
-         ${newManager.name}
-         ${newIntern.name}
+        <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
+        <div class="w-full h-20 bg-blue-700 rounded-md">
+            <h2 class="text-lg font-bold text-white text-start">
+                ${newManager.name}
+            </h2>
+            <h2 class="mb-10 text-lg font-bold text-white text-start">
+                <i class="fas fa-coffee"></i>
+                ${newManager.getRole()}
+            </h2>
+            <p class="w-full p-4 bg-white">Email:${newManager.email}</p>
+            <p class="w-full p-4 bg-white">Office Number:${newManager.officeNumber}</p>
+        </div>
+    </div>
+
+        <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
+            <div class="w-full h-20 bg-blue-700 rounded-md">
+                <h2 class="text-lg font-bold text-white text-start">
+                    ${newIntern.name}
+                </h2>
+                <h2 class="mb-10 text-lg font-bold text-white text-start">
+                    <i class="fas fa-glasses"></i>
+                    ${newIntern.getRole()}
+                </h2>
+                <p class="w-full p-4 bg-white">Email:${newIntern.email}</p>
+                <p class="w-full p-4 bg-white">School:${newIntern.getSchool()}</a></p>
+            </div>
+        </div>
          `;
 
         // Write the HTML markup to the public.html file
