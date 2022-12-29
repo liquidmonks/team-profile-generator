@@ -45,6 +45,7 @@ const generateHTML = (data) => {
                     <i class="fas fa-glasses"></i>
                     ${newEngineer.getRole()}
                 </h2>
+                <p class="w-full p-4 bg-white">ID:${newEngineer.id}</p>
                 <p class="w-full p-4 bg-white">Email:${newEngineer.email}</p>
                 <p class="w-full p-4 bg-white">GitHub:<a href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
             </div>
