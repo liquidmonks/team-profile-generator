@@ -1,11 +1,11 @@
 // This file is used to generate the HTML file that will be used to display the data
 
 // Import the classes
-const { Engineer, Intern, Manager } = require("./lib/classes");
+const { Engineer, Intern, Manager } = require("../lib/classes");
 const path = require("path");
 const fs = require("fs");
 
-const htmlPath = path.join(__dirname, "./dist/public.html");
+const htmlPath = path.join(__dirname, "../dist/public.html");
 console.log(htmlPath);
 
 const generateHTML = (data) => {
@@ -44,6 +44,15 @@ const generateHTML = (data) => {
          ${newManager.name}
          ${newIntern.name}
          `;
+
+        // Write the HTML markup to the public.html file
+        fs.writeFile(htmlPath, markupIntern, (err) => {
+          if (!err) {
+            console.log("Data posted to HTML file");
+          } else {
+            console.log(err);
+          }
+        });
 
         break;
       default:
