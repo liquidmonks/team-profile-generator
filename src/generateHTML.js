@@ -61,6 +61,47 @@ const generateHTML = (data) => {
   }
   // If the user is not a manager, then do nothing
   else {
+    switch (data.role) {
+      case "Engineer":
+        const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
+        //console.log(newEngineer);
+
+        // Create the HTML markup
+        let markupEngineer = `
+        ${newEngineer.name}
+        `;
+
+        // Write the HTML markup to the public.html file
+        fs.writeFile(htmlPath, markupEngineer, (err) => {
+          if (!err) {
+            console.log("Data posted to HTML file");
+          } else {
+            console.log(err);
+          }
+        });
+
+        break;
+      case "Intern":
+        const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
+        //console.log(newIntern);
+        // Create the HTML markup
+        let markupIntern = `
+         ${newIntern.name}
+         `;
+
+        // Write the HTML markup to the public.html file
+        fs.writeFile(htmlPath, markupIntern, (err) => {
+          if (!err) {
+            console.log("Data posted to HTML file");
+          } else {
+            console.log(err);
+          }
+        });
+
+        break;
+      default:
+        break;
+    }
   }
 };
 
