@@ -48,7 +48,7 @@ const generateHTML = (data) => {
                 </h2>
                 <p class="w-full p-4 bg-white">ID:${newEngineer.id}</p>
                 <p class="w-full p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
-                <p class="w-full p-4 bg-white">GitHub:<a href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+                <p class="w-full p-4 bg-white">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
             </div>
         </div>
         `;
