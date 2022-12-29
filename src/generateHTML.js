@@ -91,6 +91,7 @@ const generateHTML = (data) => {
                     <i class="fas fa-glasses"></i>
                     ${newIntern.getRole()}
                 </h2>
+                <p class="w-full p-4 bg-white">ID:${newIntern.id}</p>
                 <p class="w-full p-4 bg-white">Email:${newIntern.email}</p>
                 <p class="w-full p-4 bg-white">School:${newIntern.getSchool()}</a></p>
             </div>
