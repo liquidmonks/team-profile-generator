@@ -92,7 +92,7 @@ const generateHTML = (data) => {
                     ${newIntern.getRole()}
                 </h2>
                 <p class="w-full p-4 bg-white">ID:${newIntern.id}</p>
-                <p class="w-full p-4 bg-white">Email:${newIntern.email}</p>
+                <p class="w-full p-4 bg-white">Email:<a href="mailto:${newIntern.email}">${newIntern.email}</a></p>
                 <p class="w-full p-4 bg-white">School:${newIntern.getSchool()}</a></p>
             </div>
         </div>
