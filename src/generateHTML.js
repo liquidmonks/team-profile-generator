@@ -32,7 +32,7 @@ const generateHTML = (data) => {
                 ${newManager.getRole()}
             </h2>
             <p class="w-full p-4 bg-white">ID:${newManager.id}</p>
-            <p class="w-full p-4 bg-white">Email:${newManager.email}</p>
+            <p class="w-full p-4 bg-white">Email:<a href="mailto:${newManager.email}">${newManager.email}</a></p>
             <p class="w-full p-4 bg-white">Office Number:${newManager.officeNumber}</p>
         </div>
     </div>
