@@ -89,7 +89,7 @@ const generateHTML = (data) => {
                     ${newIntern.name}
                 </h2>
                 <h2 class="mb-10 text-lg font-bold text-white text-start">
-                    <i class="fas fa-glasses"></i>
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     ${newIntern.getRole()}
                 </h2>
                 <p class="w-full p-4 bg-white m-1">ID:${newIntern.id}</p>
@@ -159,7 +159,7 @@ const generateHTML = (data) => {
                     ${newIntern.name}
                 </h2>
                 <h2 class="mb-10 text-lg font-bold text-white text-start">
-                    <i class="fas fa-glasses"></i>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     ${newIntern.getRole()}
                 </h2>
                 <p class="w-full p-4 bg-white m-1">ID:${newIntern.id}</p>
