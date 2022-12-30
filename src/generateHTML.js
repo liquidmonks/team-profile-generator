@@ -39,7 +39,7 @@ const generateHTML = (data) => {
 
     <div class="bg-gray-200 m-5 rounded-md shadow-md h-80 w-60">
             <div class="w-full h-20 bg-blue-700 rounded-md">
-                <h2 class="text-lg font-bold text-white text-start">
+                <h2 class="text-lg font-bold text-white text-start m-1">
                     ${newEngineer.name}
                 </h2>
                 <h2 class="mb-10 text-lg font-bold text-white text-start">
