@@ -122,21 +122,6 @@ const generateHTML = (data) => {
         // Create the HTML markup
         let markupEngineer = `
         <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
-        <div class="w-full h-20 bg-blue-700 rounded-md">
-            <h2 class="text-lg font-bold text-white text-start">
-                ${newManager.name}
-            </h2>
-            <h2 class="mb-10 text-lg font-bold text-white text-start">
-                <i class="fas fa-coffee"></i>
-                ${newManager.getRole()}
-            </h2>
-            <p class="w-full p-4 bg-white">ID:${newManager.id}</p>
-            <p class="w-full p-4 bg-white">Email:${newManager.email}</p>
-            <p class="w-full p-4 bg-white">Office Number:${newManager.officeNumber}</p>
-        </div>
-    </div>
-
-        <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
             <div class="w-full h-20 bg-blue-700 rounded-md">
                 <h2 class="text-lg font-bold text-white text-start">
                     ${newEngineer.name}
@@ -167,21 +152,7 @@ const generateHTML = (data) => {
         //console.log(newIntern);
         // Create the HTML markup
         let markupIntern = `
-        <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
-        <div class="w-full h-20 bg-blue-700 rounded-md">
-            <h2 class="text-lg font-bold text-white text-start">
-                ${newManager.name}
-            </h2>
-            <h2 class="mb-10 text-lg font-bold text-white text-start">
-                <i class="fas fa-coffee"></i>
-                ${newManager.getRole()}
-            </h2>
-            <p class="w-full p-4 bg-white">Email:${newManager.email}</p>
-            <p class="w-full p-4 bg-white">Office Number:${newManager.officeNumber}</p>
-        </div>
-    </div>
-
-        <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
+ <div class="bg-gray-200 rounded-md shadow-md h-80 w-60">
             <div class="w-full h-20 bg-blue-700 rounded-md">
                 <h2 class="text-lg font-bold text-white text-start">
                     ${newIntern.name}
