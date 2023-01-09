@@ -41,20 +41,26 @@ const generateHTML = (data) => {
     </div>
     </div>
     
-    <div class="bg-gray-200 m-5 rounded-md shadow-md h-80 w-60">
-            <div class="w-full h-20 bg-blue-700 rounded-md">
-                <h2 class="text-lg font-bold text-white text-start m-1">
-                    ${newEngineer.name}
-                </h2>
-                <h2 class="mb-10 text-lg font-bold text-white text-start">
-                    <i class="fas fa-glasses"></i>
-                    ${newEngineer.getRole()}
-                </h2>
-                <p class="w-full p-4 bg-white">ID:${newEngineer.id}</p>
-                <p class="w-full p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
-                <p class="w-full p-4 bg-white m-1">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
-            </div>
-        </div>
+
+    <div class="p-5 md:w-4/12 sm:w-1/2 w-full">
+    <div class="bg-gray-200 rounded-md shadow-md ">
+        <div class="w-full bg-blue-500  rounded-b-none rounded-md p-5">
+<h2 class="text-2xl font-bold text-white text-start">
+    ${newEngineer.name}
+</h2>
+<h2 class="text-lg font-bold text-white text-start">
+    <i class="fas fa-glasses"></i>
+    ${newEngineer.getRole()}
+</h2>
+</div>
+        <div class="p-5">
+<p class="border-b border-t p-4 bg-white rounded-t">ID:${newEngineer.id}</p>
+<p class="border-b p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
+<p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+</div>
+</div>
+</div>
+
         `;
 
         // Write the HTML markup to the public.html file
@@ -72,6 +78,34 @@ const generateHTML = (data) => {
         //console.log(newIntern);
         // Create the HTML markup
         let markupIntern = `
+
+    <div class="p-5 md:w-4/12 sm:w-1/2 w-full">
+    <div class="bg-gray-200 rounded-md shadow-md ">
+        <div class="w-full bg-blue-500  rounded-b-none rounded-md p-5">
+<h2 class="text-2xl font-bold text-white text-start">
+    ${newEngineer.name}
+</h2>
+<h2 class="text-lg font-bold text-white text-start">
+    <i class="fas fa-glasses"></i>
+    ${newEngineer.getRole()}
+</h2>
+</div>
+        <div class="p-5">
+<p class="border-b border-t p-4 bg-white rounded-t">ID:${newEngineer.id}</p>
+<p class="border-b p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
+<p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+        
         <div class="bg-gray-200 m-5 rounded-md shadow-md h-80 w-60">
         <div class="w-full h-20 bg-blue-700 rounded-md">
             <h2 class="text-lg font-bold text-white text-start">
