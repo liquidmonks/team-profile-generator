@@ -100,9 +100,9 @@ Extended Class `Intern`:
 
 ## Visual Tutorial
 
-![Video Tutorial](https://i.imgur.com/fEFOYB5.gif)
+![screenshot](https://i.imgur.com/fEFOYB5.gif)
 
-![Screenshot](https://i.imgur.com/BZ3ofQu.png)
+![screenshot](https://i.imgur.com/BZ3ofQu.png)
 
 
 ## 🔗 Live Site Link
