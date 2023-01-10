@@ -5,7 +5,7 @@ const { Engineer, Intern, Manager } = require("../lib/classes");
 const path = require("path");
 const fs = require("fs");
 
-const htmlPath = path.join(__dirname, "../dist/public.html");
+const htmlPath = path.join(__dirname, "../www/public.html");
 console.log(htmlPath);
 
 const generateHTML = (data) => {
@@ -34,9 +34,9 @@ const generateHTML = (data) => {
             </h2>
             </div>
                     <div class="p-5">
-            <p class="border-b border-t p-4 bg-white rounded-t">ID:${newManager.id}</p>
-            <p class="border-b p-4 bg-white">Email:<a href="mailto:${newManager.email}">${newManager.email}</a></p>
-            <p class="border-b p-4 bg-white rounded-br rounded-bl">Office Number:${newManager.officeNumber}</p>
+            <p class="border-b border-t p-4 bg-white rounded-t">ID: ${newManager.id}</p>
+            <p class="border-b p-4 bg-white">Email:<a href="mailto: ${newManager.email}"> ${newManager.email}</a></p>
+            <p class="border-b p-4 bg-white rounded-br rounded-bl">Office Number: ${newManager.officeNumber}</p>
         </div>
     </div>
     </div>
@@ -54,9 +54,9 @@ const generateHTML = (data) => {
 </h2>
 </div>
         <div class="p-5">
-<p class="border-b border-t p-4 bg-white rounded-t">ID:${newEngineer.id}</p>
-<p class="border-b p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
-<p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+<p class="border-b border-t p-4 bg-white rounded-t">ID: ${newEngineer.id}</p>
+<p class="border-b p-4 bg-white">Email:<a href="mailto: ${newEngineer.email}"> ${newEngineer.email}</a></p>
+<p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub: <a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
 </div>
 </div>
 </div>
@@ -91,9 +91,9 @@ const generateHTML = (data) => {
     </h2>
     </div>
             <div class="p-5">
-    <p class="border-b border-t p-4 bg-white rounded-t">ID:${newEngineer.id}</p>
-    <p class="border-b p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
-    <p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+    <p class="border-b border-t p-4 bg-white rounded-t">ID: ${newEngineer.id}</p>
+    <p class="border-b p-4 bg-white">Email:<a href="mailto: ${newEngineer.email}"> ${newEngineer.email}</a></p>
+    <p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub: <a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
     </div>
     </div>
 
@@ -116,9 +116,9 @@ ${newManager.getRole()}
 </h2>
 </div>
     <div class="p-5">
-<p class="border-b border-t p-4 bg-white rounded-t">ID:${newManager.id}</p>
-<p class="border-b p-4 bg-white">Email:<a href="mailto:${newManager.email}">${newManager.email}</a></p>
-<p class="border-b p-4 bg-white rounded-br rounded-bl">Office Number:${newManager.officeNumber}</p>
+<p class="border-b border-t p-4 bg-white rounded-t">ID: ${newManager.id}</p>
+<p class="border-b p-4 bg-white">Email:<a href="mailto: ${newManager.email}"> ${newManager.email}</a></p>
+<p class="border-b p-4 bg-white rounded-br rounded-bl">Office Number: ${newManager.officeNumber}</p>
 </div>
 </div>
 </div>
@@ -137,9 +137,9 @@ ${newIntern.getRole()}
 </h2>
 </div>
     <div class="p-5">
-<p class="border-b border-t p-4 bg-white rounded-t">ID:${newIntern.id}</p>
-<p class="border-b p-4 bg-white">Email:<a href="mailto:${newIntern.email}">${newIntern.email}</a></p>
-<p class="border-b p-4 bg-white rounded-br rounded-bl">School:${newIntern.getSchool()}</a></p>
+<p class="border-b border-t p-4 bg-white rounded-t">ID: ${newIntern.id}</p>
+<p class="border-b p-4 bg-white">Email:<a href="mailto: ${newIntern.email}"> ${newIntern.email}</a></p>
+<p class="border-b p-4 bg-white rounded-br rounded-bl">School: ${newIntern.getSchool()}</a></p>
 </div>
 </div>
 </div>
@@ -184,9 +184,9 @@ ${newIntern.getRole()}
     </h2>
     </div>
             <div class="p-5">
-    <p class="border-b border-t p-4 bg-white rounded-t">ID:${newEngineer.id}</p>
-    <p class="border-b p-4 bg-white">Email:<a href="mailto:${newEngineer.email}">${newEngineer.email}</a></p>
-    <p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub:<a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
+    <p class="border-b border-t p-4 bg-white rounded-t">ID: ${newEngineer.id}</p>
+    <p class="border-b p-4 bg-white">Email:<a href="mailto: ${newEngineer.email}"> ${newEngineer.email}</a></p>
+    <p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub: <a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
     </div>
     </div>
     </div>
@@ -219,9 +219,9 @@ ${newIntern.getRole()}
         </h2>
         </div>
             <div class="p-5">
-        <p class="border-b border-t p-4 bg-white rounded-t">ID:${newIntern.id}</p>
-        <p class="border-b p-4 bg-white">Email:<a href="mailto:${newIntern.email}">${newIntern.email}</a></p>
-        <p class="border-b p-4 bg-white rounded-br rounded-bl">School:${newIntern.getSchool()}</a></p>
+        <p class="border-b border-t p-4 bg-white rounded-t">ID: ${newIntern.id}</p>
+        <p class="border-b p-4 bg-white">Email:<a href="mailto: ${newIntern.email}"> ${newIntern.email}</a></p>
+        <p class="border-b p-4 bg-white rounded-br rounded-bl">School: ${newIntern.getSchool()}</a></p>
         </div>
         </div>
         </div>
