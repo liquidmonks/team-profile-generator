@@ -9,8 +9,6 @@ const htmlPath = path.join(__dirname, "../www/public.html");
 console.log(htmlPath);
 
 const generateHTML = (data) => {
-  //console.log(data);
-
   // If the user is a manager, then the manager HTML will be generated
   if (data.manager == "y") {
     const newManager = new Manager(data.managerName, data.managerID, data.managerEmail, data.officeNumber);
@@ -18,7 +16,6 @@ const generateHTML = (data) => {
     switch (data.role) {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
-        //console.log(newEngineer);
 
         // Create the HTML markup
         let markupEngineer = `
@@ -75,7 +72,7 @@ const generateHTML = (data) => {
         break;
       case "Intern":
         const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
-        //console.log(newIntern);
+
         // Create the HTML markup
         let markupIntern = `
 
@@ -96,12 +93,6 @@ const generateHTML = (data) => {
     <p class="border-b p-4 bg-white rounded-br rounded-bl">GitHub: <a target="_blank" href="https://github.com/${newEngineer.getGithub()}">${newEngineer.getGithub()}</a></p>
     </div>
     </div>
-
-
-
-
-
-
 
 
 <div class="p-5 md:w-4/12 sm:w-1/2 w-full">
@@ -167,7 +158,6 @@ ${newIntern.getRole()}
     switch (data.role) {
       case "Engineer":
         const newEngineer = new Engineer(data.engineerName, data.engineerID, data.engineerEmail, data.engineerGithub);
-        //console.log(newEngineer);
 
         // Create the HTML markup
         let markupEngineer = `
@@ -204,7 +194,7 @@ ${newIntern.getRole()}
         break;
       case "Intern":
         const newIntern = new Intern(data.internName, data.internID, data.internEmail, data.internSchool);
-        //console.log(newIntern);
+
         // Create the HTML markup
         let markupIntern = `
         <div class="p-5 md:w-4/12 sm:w-1/2 w-full">
