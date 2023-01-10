@@ -99,8 +99,9 @@ Extended Class `Intern`:
 
 
 ## Visual Tutorial
+![team](https://user-images.githubusercontent.com/114820394/211603084-ec3e62d1-60ba-4d3b-98ba-336e7a645c16.gif)
 
-![screenshot](https://i.imgur.com/fEFOYB5.gif)
+
 
 ![screenshot](https://i.imgur.com/BZ3ofQu.png)
 
